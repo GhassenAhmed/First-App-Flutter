@@ -37,6 +37,10 @@ class RollDiceWidget extends StatelessWidget {
                   ))
             ],
           ),
+          floatingActionButton: FloatingActionButton(
+            onPressed: () => {},
+            child: const Icon(Icons.add),
+          ),
           body: const Center(
               child: Text(
             "Hello DSI32",
