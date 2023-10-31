@@ -41,13 +41,13 @@ class RollDiceWidget extends StatelessWidget {
             onPressed: () => {},
             child: const Icon(Icons.add),
           ),
-          body: const Center(
-              child: Text(
+          body: const Text(
             "Hello DSI32",
-            style: TextStyle(
-              fontSize: 40,
-            ),
-          )),
+            style: TextStyle(fontSize: 25, backgroundColor: Colors.deepOrange),
+            maxLines: 2,
+            overflow: TextOverflow.fade,
+            textAlign: TextAlign.left,
+          ),
         ));
   }
 }
