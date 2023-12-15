@@ -13,7 +13,7 @@ class RollDiceWidget extends StatelessWidget {
         home: Scaffold(
             appBar: AppBar(
               elevation: 10,
-              title: const Text("Facbook"),
+              title: const Text("Facebook"),
               backgroundColor: const Color.fromARGB(185, 20, 121, 230),
               centerTitle: true,
               leading: IconButton(
@@ -41,28 +41,18 @@ class RollDiceWidget extends StatelessWidget {
               onPressed: () => {},
               child: const Icon(Icons.add),
             ),
-            body: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.center,
+            body: const Column(
               children: [
-                const Text(
-                  "ghassen ahmed",
-                  style: TextStyle(color: Colors.black, fontSize: 33),
-                ),
-                const Text(
-                  "dsi32",
-                  style: TextStyle(
-                      color: Colors.amberAccent,
-                      fontSize: 22,
-                      backgroundColor: Colors.blueAccent),
-                ),
-                IconButton(
-                    onPressed: () {},
-                    icon: const Icon(
-                      Icons.access_alarm,
-                      size: 40,
-                      color: Colors.deepOrange,
-                    ))
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(
+                      "test",
+                      style: TextStyle(
+                          backgroundColor: Colors.blueAccent, fontSize: 50),
+                    )
+                  ],
+                )
               ],
             )));
   }
